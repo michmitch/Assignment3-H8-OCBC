@@ -1,0 +1,33 @@
+1. Jalankan Apache & MySQL di XAMPP, lalu import file movie.sql di folder MySQL Database ke localhost anda
+
+2. Buka folder Assignment3 di Visual Studio Code
+
+3. Buka Terminal di Visual Studio Code lalu jalankan command "dotnet run" tanpa tanda "
+
+4. Setelah running, masukkan URL https://localhost:5001/api/movie atau http://localhost:5000/api/movie di Postman
+
+5. Method yang tersedia yaitu Get, Post, Put, dan Delete
+   
+   Untuk Get ada Get All dan Get By Id
+   Get All akan otomatis terakses ketika memasukkan URL https://localhost:5001/api/movie atau http://localhost:5000/api/movie
+   Get By Id bisa diakses melalui URL https://localhost:5001/api/movie/[id] atau http://localhost:5000/api/movie/[id]
+   
+   Untuk Post, bisa dimasukkan ke bagian Body di Postman dengan format:
+   {
+	"Name":"[Judul Movie]",
+	"Genre":"[Genre Movie]",
+	"Duration":"[Durasi Movie]",
+	"ReleaseDate":"[Release Movie]",
+   }
+   
+   Untuk Put, harus dimasukkan ID melalui URL https://localhost:5001/api/movie/[id] atau http://localhost:5000/api/movie/[id] dan di bagian Body juga harus diisikan data dengan format yang sama seperti Post
+   
+   Untuk Delete, juga harus dimasukkan ID melalui URL https://localhost:5001/api/movie/[id] atau http://localhost:5000/api/movie/[id]
+
+6. Contoh Hasil Test API menggunakan Postman bisa dilihat pada gambar yang ada di folder Postman Result
+
+7. Detail struktur, record, dan hasil export database bisa dilihat pada folder MySQL Database
+
+Terima kasih
+	
+   
